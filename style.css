@@ -309,7 +309,6 @@ header p {
 .div4-main {
     display: flex;
     gap: 2.2em;
-    padding: 0 10em 3.12em 10em;
 }
 
 .div4-container {
@@ -467,7 +466,7 @@ header p {
 }
 
 .connect {
-    margin: 50px 10px 54.7px 10px;
+    margin: 50px 0 54.7px 0;
 
     display: flex;
     justify-content: center;
@@ -1041,6 +1040,15 @@ header p {
         justify-content: space-between;
         padding: .9em 2em;
     }
+
+
+}
+
+@media (min-width: 900px) {
+    .div4-main {
+        padding: 0 10em 3.12em 10em;
+
+    }
 }
 
 @media (max-width: 680px) {
@@ -1067,7 +1075,11 @@ header p {
     }
 
     .main-footer {
-        padding: 5em 2em;
+        padding: 5em 2em 1em 2em;
+    }
+
+    .grid-container-style img {
+        display: none;
     }
 
     /* .who-we-are {
@@ -1090,6 +1102,15 @@ header p {
 @media (max-width: 800px) {
     .div1-footer div img {
         display: none;
+    }
+
+    .contact-form,
+    .information {
+        margin: 0;
+    }
+
+    header p {
+        padding: 0 .5em;
     }
 }
 
