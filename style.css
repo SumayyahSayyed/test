@@ -53,6 +53,26 @@ li {
     height: 35px;
 }
 
+.hamburger-dropdown {
+    border: 1px solid #363636;
+    padding: 1em 1.5em .5em 1.5em;
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    background-color: white;
+}
+
+.hamburger-dropdown li {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    margin-bottom: .6em;
+}
+
+.hamburger-dropdown .contact-btn {
+    margin-left: auto;
+}
+
 /* ----------------- Navbar 2 ----------------- */
 
 .navbar-2 {
@@ -383,7 +403,7 @@ header p {
 
 .product-item {
     min-width: 310px;
-    margin: 0 1em;
+    margin: 0 .5em;
 }
 
 .product-item img {
@@ -606,6 +626,7 @@ header p {
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.08);
     padding: 1em 1em 1em 0;
     margin-bottom: 20px;
+    min-width: 280px;
 }
 
 .questions h5 {
@@ -778,6 +799,8 @@ header p {
     border-radius: 5em;
     width: 80%;
     border: none;
+    flex: 1;
+    min-width: 280px;
 }
 
 .news-email ::placeholder {
@@ -788,7 +811,7 @@ header p {
 .news-email img {
     position: absolute;
     top: 7px;
-    right: 116px;
+    right: 20px;
     background-color: #86BE3F;
     padding: .7em;
     border-radius: 50%;
@@ -817,6 +840,10 @@ header p {
 .footer1 {
     display: flex;
     justify-content: space-around;
+}
+
+.footer-left {
+    padding: 0 1em;
 }
 
 .footer-left img {
@@ -1019,6 +1046,22 @@ header p {
             'four'
             'five'
             'six';
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container-style:nth-of-type(2),
+    .grid-container-style:nth-of-type(4),
+    .grid-container-style:last-child {
+        flex-flow: row-reverse;
+        text-align: end;
+    }
+
+    .grid-container-style {
+        width: 90%;
+
     }
 
     .footer-contact {
@@ -1082,9 +1125,6 @@ header p {
         display: none;
     }
 
-    /* .who-we-are {
-        min-width: 280px;
-    } */
 }
 
 @media (max-width: 990px) {
@@ -1096,6 +1136,16 @@ header p {
     .contact-form {
         margin: 0 3em;
         flex-basis: 80%;
+    }
+
+    #news {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2.1em .5em;
+    }
+
+    #news div {
+        flex-basis: 70%;
     }
 }
 
@@ -1122,5 +1172,9 @@ header p {
 
     header p {
         font-size: 14px;
+    }
+
+    .news-email img {
+        right: 10px;
     }
 }
