@@ -53,6 +53,10 @@ li {
     height: 35px;
 }
 
+.nav-bar a .active {
+    color: #86BE3F;
+}
+
 .hamburger-dropdown {
     border: 1px solid #363636;
     padding: 1em 1.5em .5em 1.5em;
