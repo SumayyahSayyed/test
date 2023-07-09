@@ -41,3 +41,19 @@ for (let i = 0; i < plus.length; i++) {
     })
 }
 
+window.addEventListener('DOMContentLoaded', () => {
+    var links = document.querySelectorAll('.nav-bar a');
+
+    links.forEach(function (link) {
+        link.addEventListener('click', () => {
+            removeActiveClass();
+            link.classList.add('active');
+        });
+    });
+
+    function removeActiveClass() {
+        links.forEach(function (link) {
+            link.classList.remove('active');
+        });
+    }
+});
