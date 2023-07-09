@@ -13,7 +13,24 @@
 <body>
     <nav class="nav-bar navbar-1 ">
         <a href="#"><img src="images/logo-green.svg" alt="brand logo" id="logo"></a>
-        <img class="hide view" src="images/hamburger.png">
+        <div class="dropdown-div">
+            <img id="hamburger-icon" class="hide view" src="images/hamburger.png">
+            <ul class="hide hamburger-dropdown">
+                <li>
+                    <img src="images/call-green.svg" alt="call icon">
+                    0203 519 4420
+
+                </li>
+                <li>
+                    <img src="images/email-green.svg" alt="email icon">
+                    info@solarinnovatio.com
+
+                </li>
+                <li>
+                    <button class="contact-btn btn end-button"><a href="#contact-us">Contact Us</a></button>
+                </li>
+            </ul>
+        </div>
         <ul class="navbar-1-ul">
             <li>
                 <img src="images/call-green.svg" alt="ca;ll icon">
@@ -129,7 +146,7 @@
                 <h2>Connesso, Intelligente, Resistente</h2>
                 <img src="images/Vector 9.png" alt="">
             </div>
-            <div class="grid-layout">
+            <div class="grid-layout d-flex flex-column align-items-center">
                 <div class="grid-container-style">
                     <img src="images/e.png" alt="">
                     <div>
@@ -629,7 +646,7 @@
                 <h4>Subscribe for Newsletter</h4>
                 <p>Leo dui fermentum tristique urna tellus eget amet aliquam. Id vitae orci maecenas tortor odio</p>
             </div>
-            <div class="news-email">
+            <div class="news-email d-flex justify-content-center">
                 <input type="email" name="" id="" placeholder="Inserisci la tua email">
                 <img src="images/arrow.svg" alt="">
             </div>
@@ -638,12 +655,12 @@
 
     <footer class="main-footer">
         <div class="footer1 d-flex flex-wrap">
-            <div class="footer-left">
+            <div class="footer-left text-center d-flex flex-column align-items-center">
                 <a href="#"><img src="images/logo-white.svg" alt=""></a>
                 <p>Leo dui fermentum tristique urna tellus eget amet aliquam. Id vitae orci maecenas tortor odio Leo dui
                     fermentum tristique urna tellus eget amet aliquam.</p>
 
-                <div class="frey-images">
+                <div class="frey-images text-center">
                     <img src="images/frey.svg" alt="">
                     <img src="images/frey.svg" alt="">
                     <img src="images/frey.svg" alt="">
@@ -714,6 +731,8 @@
         </div>
     </footer>
 
+
+    <script src="app.js"></script>
 </body>
 
 </html>
