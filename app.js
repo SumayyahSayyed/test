@@ -1,3 +1,18 @@
+document.addEventListener("click", (e) => {
+    let dropdown = document.querySelector('.dropdown-div');
+
+    let targetElement = e.target;
+
+    let isClickInsideNavbarDropdown = dropdown.contains(targetElement);
+
+
+    if (!isClickInsideNavbarDropdown) {
+        hamburgerDropdown.classList.add("hide");
+    }
+
+});
+
+
 let hamburger = document.getElementById("hamburger-icon");
 let hamburgerDropdown = document.querySelector(".hamburger-dropdown");
 
